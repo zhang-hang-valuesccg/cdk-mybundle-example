@@ -1,0 +1,21 @@
+{
+  "name": "lambda-mybundle",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "bundle": "esbuild --bundle dist/index.js --outfile=bundle/index.js --platform=node --target=node20",
+    "produce": "npm-run-all2 build bundle"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "npm-run-all2": "^7.0.2",
+    "zod": "^3.24.2"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.13"
+  }
+}
