@@ -20,7 +20,7 @@ export class CdkMybundleExampleStack extends cdk.Stack {
       runtime: Runtime.NODEJS_20_X,
     });
 
-    execSync('npm i & npm run produce', {
+    execSync('npm i && npm run produce', {
       cwd: 'lambda-mybundle',
       stdio: 'inherit',
       shell: 'bash',
